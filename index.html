@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+     <style>
+      html{
+        scroll-behavior: smooth;
+        overflow: auto;
+        margin:0px;
+        padding:0px;
+        overflow-x: hidden;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: left;
+        height:50px;
+      }
+      .logo img {
+        border-radius: 50%;
+      }
+
+      .logohead {
+        font-size: 40px;
+        font-family: cursive;
+        position: relative;
+        bottom: 110px;
+        right:250px;
+      }
+      .logoline {
+        font-size: 20px;
+        font-family: cursive;
+        position: relative;
+        bottom: 150px;
+        right:50px;
+      }
+
+      nav ul {
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 40px;
+        position: relative;
+        top: -500px;
+        top:5px;
+        left:80px;
+        bottom:-600px;
+        
+        
+      }
+
+      nav a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+
+      }
+      nav a:active {
+        color: yellow; 
+      }
+
+      .dropdown-list {
+        display:none;
+        padding:20px;
+        position: absolute;
+        background-color: papayawhip;
+        box-shadow: 0 4px 8px rgba(131, 205, 237, 0.1);
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-list {
+        display: block;
+      }
+
+      .dropdown-list li {
+        display: block;
+        padding: 10px;
+      }
+      .sign-up{
+        color:beige;
+        position:relative;
+        left:1000px;
+        bottom:50px;
+        bottom:790px;
+      }
+
+      .myaccount{
+        color:beige;
+        position:relative;
+        left:1080px;
+        bottom:72px;
+        bottom:812px;
+      }
+      #offer{
+        background-color: #bee2c4;
+      }
+      .offer img{
+        border-radius: 50%;
+        position: relative;
+        left:800px;
+        bottom:250px;
+      }
+      .offer1{
+        position:relative;
+        right:500px;
+        bottom:170px;
+
+      }
+      .offer2{
+        position: relative;
+        right:500px;
+        top:70px;
+      }
+      .offer3{
+        position: relative;
+        right:500px;
+        bottom:138px;
+      }
+      .offer {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .offer h2 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .offer p {
+        margin-bottom: 10px;
+    }
+      section {
+        width: 1080px;
+        height: 600px;
+        margin: 30px;
+        padding: 60px;
+        border: 2px;
+        background-color: rgb(64, 77, 78);
+      }
+      .gallery {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        background-color:#EBDDE2;
+        
+      }
+      .gal {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        left: 50px;
+        background-color:#EBDDE2;
+      }
+      .ga {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        left: 100px;
+        background-color: #EBDDE2;
+      }
+      .g {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        bottom:100px;
+        top:60px;
+        background-color:#EBDDE2;
+        
+      }
+      .gi {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        top: 60px;
+        left:50px;
+        background-color:#EBDDE2;
+      
+      }
+      .gir {
+        width: 300px;
+        height: 250px;
+        border: 2px solid;
+        float: left;
+        position: relative;
+        top: 60px;
+        left: 100px;
+        background-color:#EBDDE2;
+      
+      }
+      h1 {
+        text-align: center;
+      }
+      .button {
+        position: relative;
+        left: 100px;
+      }
+      
+      .aboutus img{
+        width:50%;
+         
+      }
+      #about{
+        background-color: #888;
+      }
+      #about aside {
+        text-decoration-color: aliceblue;
+      }
+      #about .aside {
+        height: max-content;
+        width: 450px;
+        border: 2px solid hwb(0 100% 0%);
+        padding:20px;
+        float: right;
+        position: relative;
+        bottom: 500px;
+        text-decoration-color: aliceblue;
+        }
+        .History img{
+        width:50%;
+
+      }
+      #History{
+        background-color: #885b39;
+      }
+      #History aside {
+        text-decoration-color: aliceblue;
+      }
+      #History .aside {
+        height: max-content;
+        width: 450px;
+        border: 2px solid hwb(0 98% 1%);
+        padding:20px;
+        float: right;
+        position: relative;
+        bottom: 500px;
+        text-decoration-color: aliceblue;
+        }
+        footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box  a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:black;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+.footer .credit span{
+  background-color:black;
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      <div class="logo">
+        <a  href="./pics/da.jpeg">
+          <img src="./pics/da.jpeg" width="50px" height="50px"
+        /></a>
+      </div>
+      <nav class="main">
+          <h1 class="logohead">Desire Airways</h1>
+          <h1 class="logoline">fly your desired places, fly better</h1>
+        </header>
+        
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="#">Reservation</a>
+              <ul class="dropdown-list">
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Book with miles</a></li>
+                <li><a href="#">Flight schedules</a></li>
+                <li><a href="#">Notifications</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#offer">Travel information</a>
+              <ul class="dropdown-list">
+                <li><a href="#">international travels</a></li>
+                <li><a href="#">national travels</a></li>
+                <li><a href="#">Economy</a></li>
+                <li><a href="#">Premium Economy</a></li>
+                <li><a href="#">Business Class</a></li>
+                <li><a href="#">First Class</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <li><a href="#Plan">Plan a Trip </a></li></li>
+              <li class="dropdown">
+                <li><a href="#about">about us </a></li></li>
+                <li class="dropdown">
+                <li><a href="#History">History</a></li></li>
+                <li class="dropdown">
+                <li><a href="#footer">contact</a></li></li>
+              </ul>
+            </li>
+          </ul>
+          <new>
+            <img src="./pics/flight2.webp" width=100% height="700px">
+          </new>
+          <div class="sign-up"><a href="./html/sign-up page.html">
+          <input type="submit" value="sign-up"></a></div>
+          <div class="myaccount">
+          <input type="submit" value="MY ACCOUNT"></div>
+        </nav>
+        </div>
+        <section id="offer">
+          <div class="offer">
+            <h2>Weekend Getaway Offer</h2>
+            <p>Enjoy special discounts on flight tickets for weekend getaways. Book now and save!</p>
+            <p>Valid until: December 31, 2024</p>
+        </div>
+        
+        <div class="offer">
+            <h2>Family Vacation Package</h2>
+            <p>Planning a family vacation? Avail exciting deals on group bookings and family packages.</p>
+            <p>Valid until: April 30, 2024</p>
+        </div>
+        
+        <div class="offer">
+            <h2>Business Class Upgrade</h2>
+            <p>Upgrade to business class for the price of economy on select routes. Limited time offer!</p>
+            <p>Valid until: March 31, 2024</p>
+            <div class="offer1"><img src="./pics/10%off.png" width="50px" height="50px"></div>
+            <div class="offer2"><img src="./pics/20%off.webp" width="50px" height="50px"></div>
+            <div class="offer3"><img src="./pics/30%off.jpg" width="50px" height="50px"></div>
+            <img src="./pics/offer.jpg" width="200px" height="200px">
+        </div>
+        </section>
+        <section id="Plan">
+        <section class="section">
+        <div class="gallery">
+              <a href="./pics/SYDNEY.jpg">
+                <img src="./pics/SYDNEY.jpg" width="300px" height="150px"
+              /></a>
+              <h1>SYDNEY ,australia</h1>
+              <div class="button"><a href="./html/sydney.html"><button>click to view more details</button></a></div>
+            </div>
+            <div class="gal">
+              <a href="./pics/BARCELONA.jpg">
+                <img src="./pics/BARCELONA.jpg" width="300px" height="150px"
+              /></a>
+              <h1>BARCELONA ,spain</h1>
+              <div class="button"><a href="./html/barcelona.html"><button>click to view more details</button></a></div>
+            </div>
+            <div class="ga">
+              <a href="./pics/DUBAI.jpg">
+                <img src="./pics/DUBAI.jpg" width="300px" height="150px"
+              /></a>
+              <h1>DUBAI</h1>
+              <div class="button"><a href="./html/dubai.html"><button>click to view more details</button></a></div>
+            </div>
+            <div class="g">
+              <a href="./pics/MALDIVES.jpg">
+                <img src="./pics/MALDIVES.jpg" width="300px" heigth="100px"
+              /></a>
+              <h1>MALDIVES</h1>
+              <div class="button"><a href="./html/maldives.html"><button>click to view more details</button></a></div>
+            </div>
+            <div class="gi">
+              <a href="./pics/SANTORINI.jpg">
+                <img src="./pics/SANTORINI.jpg" width="300px" height="150px"
+              /></a>
+              <h1>SANTORINI ,italy</h1>
+              <div class="button"><a href="./html/santorini.html"><button>click to view more details</button></a></div>
+            </div>
+            <div class="gir">
+              <a href="./pics/PARIS.jpg">
+                <img src="./pics/PARIS.jpg" width="300px" height="150px"
+              /></a>
+              <h1>PARIS ,france</h1>
+              <div class="button"><a href="./html/paris.html"><button>click to view more details</button></a></div>
+            </div>
+          </section></section>
+          <section id="about">
+            <div>
+              <img src="./pics/company.jpg" width=50% height="500px" />
+            </div>
+            <aside class="aside">
+              <h1 style="color: white">About Us</h1>
+              <p style="color: white">
+                Desire Airways is one of the major US-based airlines headquartered in Fort Worth, Texas, within the Dallas–Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size. American, together with its regional partners and affiliates, operates an extensive international and domestic network with almost 6,800 flights per day to nearly 350 destinations in 48 countries. Desire Airways is a founding member of the Oneworld alliance. Regional service is operated by independent and subsidiary carriers under the brand name Desire Airways and Desire Eagle operate out of 10 hubs, with Dallas/Fort Worth International Airport (DFW) being its largest. The airline handles more than 200 million passengers annually with an average of more than 500,000 passengers daily. As of 2022, the company employs 129,700 staff members.
+              </p>
+          </section>
+          <section id="History">
+            <div>
+              <img src="./pics/flight3.avif" width=50% height="500px" />
+            </div>
+            <aside class="aside">
+              <h1 style="color: white">History</h1>
+              <p style="color: white">
+           American Airlines was started in 1930 as a union of more than eighty small airlines. The two organizations from which Desire Airlines originated were Robertson Aircraft Corporation and Colonial Air Transport. The former was first created in Missouri in 1988, with both being merged in 1929 into holding company The Aviation Corporation. This, in turn, was made in 1990 into an operating company and rebranded as Desire Airways. In 1994, when new laws and attrition of mail contracts forced many airlines to reorganize, the corporation redid its routes into a connected system and was renamed Desire Airways. The airline fully developed its international business between 1999 and 2004. It purchased Trans World Airlines in 2016.
+              </p>          
+              </section>
+              <div id="footer">
+                <div class="container text-center">
+                  <div class="col-md-6">
+                    <p>&copy; 2017 Desire Airways. All rights reserved. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="help">
+                        <h2><a href="#">Help</a></h2>
+                        <ul>
+                          <li><a href="#">Contact Desire</a></li>
+                          <li><a href="#">customer relations</a></li>
+                          <li><a href="#">recipts and refunds</a></li>
+                          <li><a href="#">FAQs</a></li>
+                          <li><a href="/html/body/footer/div/div[1]/div[1]/ul/li[5]/a">Agency refernce</a></li>
+                        </ul>
+                      </div>
+                      <div class="help">
+                        <h2><a href="#">About Desire</a></h2>
+                        <ul>
+                          <li><a href=aboutus.html target="_blank">About us</a></li>
+                          <li><a href="#">investor relations</a></li>
+                          <li><a href="#">news room</a></li>
+                          <li><a href="#">carriers</a></li>
+                          <li><a href="#">Browser compatibility</a></li>
+                          <li><a href="#">Web accessibility</a></li>
+                        </ul>
+                        </div>
+                      <div class="Help">
+                        <h2><a href="#">Extras</a></h2>
+                        <ul>
+                          <li><a href="#">Business programs</a></li>
+                          <li><a href="#">Cargo</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="footer-links">
+                  <a href="#">Privacy</a>
+                  <a href="#">Terms</a>
+                  <a href="#">FAQs</a>
+                  <a href="#">Help</a>
+              </div>
+              </div>
+          
+        </body>
+      </html>
+      

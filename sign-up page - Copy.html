@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image:url(flight1.avif);
+        background-repeat: no no-repeat;
+        background-size: cover; /* Gradient background */
+        height: 100%;
+        width:100%; /* Make the background cover the entire viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-container {
+        background:transparent; /* Semi-transparent background for the login container */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for a card-like effect */
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+      .login-container h2 {
+        margin-bottom: 20px;
+      }
+
+      .login-container input[type="text"],
+      .login-container input[type="text"],
+      .login-container input[type="text"],
+      .login-container input[type="password"],
+      .login-container input[type="select"],
+      .login-container input[type="number"],
+      .login-container input[type="Email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .login-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .login-container input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>sign-up page</h2>
+      <form action="#" method="post">
+        <input type="text" name="firstname" placeholder="firstname" required />
+        <input type="text" name="lastname" placeholder="lastname" required />
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        /><input
+          type="number"
+          name="Enter Mobile"
+          placeholder="Enter number"
+          required
+        />
+        <input type="Email" name="Email" placeholder="Email" required />
+
+        <input type="submit" value="sign-up" />
+        <pre style="font-size: 20px">   already signed-up?    <a href="login page.html">login</a>  
+      </form>
+    </div>
+  </body>
+</html>
